@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "outDir": "../.output/server",
+    "target": "ES6",
+    "module": "commonjs",
+    "baseUrl": "./",
+    "skipLibCheck": true,
+    "lib": [
+      "ESNext"
+    ],
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    },
+    "typeRoots": [
+      "./types"
+    ]
+  },
+  "include": [
+    "./**/*",
+    "tsconfig.json"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

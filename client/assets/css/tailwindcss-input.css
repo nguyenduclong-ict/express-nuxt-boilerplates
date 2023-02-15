@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.el-loading-spinner svg {
+  margin: auto;
+}
+
+.el-message {
+  min-width: 100px !important;
+}
+
+.gutter > * {
+  margin: 0 !important;
+}
+
+.el-table__header th {
+  color: #000000a8;
+}

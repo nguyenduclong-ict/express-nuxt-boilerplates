@@ -1,0 +1,63 @@
+.el-form-item.no-margin {
+  margin-bottom: 0px !important;
+}
+
+.custom-dialog {
+  margin-top: 5vh !important;
+  .el-dialog__body {
+    max-height: calc(90vh - 128px);
+    overflow-y: auto;
+  }
+}
+
+.el-cascader-menu {
+  width: 100%;
+}
+
+.el-select.w-full {
+  width: 100% !important;
+  .el-input {
+    width: 100% !important;
+  }
+}
+
+.el-button--text.danger {
+  color: #f56c6c;
+  &:hover,
+  &:focus {
+    color: #f56c6c;
+  }
+  &:active {
+    filter: brightness(0.8);
+  }
+}
+
+.el-select.w-128px {
+  width: 128px !important;
+  .el-input {
+    width: 128px !important;
+  }
+}
+
+.w-full {
+  width: 100% !important;
+}
+
+.w-auto {
+  width: auto !important;
+}
+
+.el-form-item.label-w-full {
+  .el-form-item__label {
+    width: 100% !important;
+  }
+}
+
+.el-dialog__body {
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+}
+
+.el-divider.el-divider--horizontal.small {
+  margin: 12px 0 !important;
+}

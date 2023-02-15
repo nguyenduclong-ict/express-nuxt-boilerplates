@@ -1,0 +1,53 @@
+{
+  "controller": {
+    "scope": "typescript",
+    "prefix": "controller",
+    "body": [
+      "import { createController } from '@/helpers/router'",
+      "",
+      "export const ${TM_FILENAME_BASE/(.*)/${1:/camelcase}/} = createController(async (req, res) => {",
+      "   $0",
+      "})",
+    ],
+    "description": "Create express request handler"
+  },
+  "entity": {
+    "scope": "typescript",
+    "prefix": "entity",
+    "body": [
+      "import {",
+      "  addTransformIdForSchema,",
+      "  createModel,",
+      "  getSchemaDefinition,",
+      "} from '@/helpers/mongo'",
+      "import { Schema } from 'mongoose'",
+      "",
+      "export class ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/} {",
+      "  _id: any",
+      "  id?: any",
+      "",
+      "  createdAt?: Schema.Types.Date",
+      "  updatedAt?: Schema.Types.Date",
+      "}",
+      "",
+      "export const ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}Schema = new Schema<${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}>(getSchemaDefinition(${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}), {",
+      "  timestamps: true,",
+      "})",
+      "",
+      "addTransformIdForSchema(${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}Schema)",
+      "",
+      "export const ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}Model = createModel('${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}', ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}Schema)",
+    ]
+  },
+  "router": {
+    "scope": "typescript",
+    "prefix": "router",
+    "body": [
+      "import { Router } from 'express'",
+      "",
+      "const router = Router()",
+      "",
+      "export default router",
+    ]
+  }
+}
