@@ -1,6 +1,7 @@
 # express-nuxt-boilerplates
 
 backend: Express + Mongodb + Typescript, validator with class-decorator
+
 fontend: Nuxtjs (nuxt verion 2)
 
 ## Get Started
