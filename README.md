@@ -4,6 +4,21 @@ backend: Express + Mongodb + Typescript, validator with class-decorator
 
 fontend: Nuxtjs (nuxt verion 2)
 
+## Snipet for VSCode
+```bash
+# create controller
+# create file into server/controllers/controler-name.controller.ts
+$ controller
+
+# create router
+# create file into server/router/router-name.ts
+$ router
+
+# create mongodb model
+# create file server/database/ModelName.ts
+$ entity
+```
+
 ## Get Started
 
 ```bash
